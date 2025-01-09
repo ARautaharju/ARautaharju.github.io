@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio for Jyväskylä University of Applied Sciences"
+    />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="helper.js"></script>
+    <div class="kontti">
+      <header>
+        <h1>Tuotanto</h1>
+      </header>
+      <div class="sidebarMenu">
+        <ul>
+          <li><a href="page1.html">lähtötilanne</a></li>
+          <li><a href="page2.html">scrum</a></li>
+          <li id="inactive">tuotanto</li>
+          <li><a href="page4.html">lopuksi</a></li>
+        </ul>
+      </div>
+      <main>
+        <h2>Stack</h2>
+        <p>
+          Päädyimme mukautettuun MEAN-stack-ratkaisuun. Käytimme Node.js:ää,
+          SQL-tietokantaa ja Angularia. Lisäksi otimme myöhemmin käyttöön AWS:n
+          Elastic Beanstalkin.
+        </p>
+        <p>
+          Itse halusin ottaa käyttöön jonkin työkalun, jota ei ollut käytetty
+          kursseilla, joten otin mukaan kehitykseen Sequelizen. Uuden opettelun
+          lisäksi halusin hieman helpottaa omaa elämääni, koska projektissa oli
+          vain neljä jäsentä.
+        </p>
+        <h2>Sequelize</h2>
+        <p>
+          Halusin tosiaan kokeilla ORM-työkalun käyttöä MySQL:n kanssa, joten
+          projektin alussa käytin hieman aikaa eri vaihtoehtojen tutkimiseen.
+          Sequelize vaikutti parhaalta vaihtoehdolta projektiimme. Vaikka monien
+          mielestä sen dokumentaatio on ilmeisesti vähän vaikeaselkoinen, omasta
+          mielestäni dokumentiaatiosta oli paljon apua.
+        </p>
+        <p>
+          Jälkeenpäin voin sanoa, että Sequelizen käyttö oli hyvä ajatus, koska
+          tosiaankin opin jotain uutta sitä käyttämällä ja lisäksi pääsin
+          keskittymään laajemmin eri osiin sovelluksen rakennusta.
+        </p>
+        <p>
+          Ajatuksena oli myös, että jos tietokanta tarvitsee vaihtaa MySQL:stä
+          Postgreen tms. AWS:ään siirtymisen yhteydessä, Sequelize nopeuttaisi &
+          helpottaisi muutosta.
+        </p>
+        <h2>Muuta opeteltavaa</h2>
+        <p>
+          Projektin aikana opin käyttämään Node.js:ää huomattavasti paremmin,
+          kuin ennen projektia. Vaikka jotkut asiat ovat vieläkin hieman
+          epäselviä, käytän sitä nyt huomattavasti sujuvammin.
+        </p>
+        <p>
+          Myös Express-kirjaston käyttö tuli tutuksi projektin aikana. Minulla
+          oli ennen projektia melko hatara käsitys reitityksestä, mutta
+          projektin lopussa voin sanoa ymmärtäväni sitä huomattavasti paremmin.
+        </p>
+        <h2>Esimerkkejä</h2>
+        <p>
+          Koodia kirjoitettiin yhteistyönä, joten se ei ole 100% omaa työtäni.
+          Kuitenkin jotkut osat ovat enemmän omaa käsialaani kuin toiset.
+        </p>
+        <p>
+          Siinä vaiheessa kun Sami siirtyi tekemään 90% AWS-juttuja, kirjoitin
+          itse enemmän koodia. Yritin lähinnä saada asiat toimimaan sellaiseen
+          vaiheeseen, että pystyi testaamaan onko kyseessä ylipäätään
+          hyvä/tarpeellinen toiminnallisuus. Myöhemmin sitten korjailin omia
+          huolimattomuusvirheitäni :D Tämä oli mielestäni ihan hyvä tapa
+          rakentaa (ainakin tätä) sovellusta.<br />
+          Tämän takia tein myös jonkin verran frontendin puolella.
+        </p>
+        <h3>Projektin muokkaus</h3>
+        <p>
+          Tässä esimerkkinä sovelluksen toiminnasta kaikki mitä tarvitaan
+          projektin muokkaamiseen (backendin puolelta).
+        </p>
+        <p>Projekti-controller:</p>
+        <img
+          src="assets/projektinMuokkausController.jpg"
+          class="responsiveImg"
+        />
+        <p>Osa projektin modelista:</p>
+        <img src="assets/projectModel.jpg" class="responsiveImg" />
+        <p>
+          Express-reitti, jossa kutsutaan controllerista löytyvä
+          tietokantakomento:
+        </p>
+        <img src="assets/projektinMuokkausRoutes.jpg" class="responsiveImg" />
+      </main>
+      <footer>
+        <p><a href="index.html">Takaisin introsivulle</a></p>
+        <p>©2024-2025 AE Rautaharju</p>
+      </footer>
+    </div>
+  </body>
+</html>
